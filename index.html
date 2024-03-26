@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <style>
+            body {
+                background-color: #1a1e33;
+                margin: 0;
+                overflow-x: hidden;
+            }
+
+            .marquee {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                margin: 0;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+            }
+
+            .double img {
+               margin-left: -100vw;
+            }
+
+            .tripple img {
+               margin-left: 100vw;
+            }
+            
+            .marquee img {
+                position: absolute;
+                width: 100vw;
+            }
+
+            .cloned-marquee {
+                margin-top: -10px;
+            }
+
+            .single img:nth-of-type(1), .double img:nth-of-type(1), .tripple img:nth-of-type(1) {
+                margin-top: -27px;
+                animation: scroll-left linear 80s infinite;
+            }.single img:nth-of-type(2), .double img:nth-of-type(2), .tripple img:nth-of-type(2) {
+                margin-top: 11px;
+                width: 101vw;
+                animation: scroll-right linear 80s infinite;
+            }.single img:nth-of-type(3), .double img:nth-of-type(3), .tripple img:nth-of-type(3) {
+                margin-top: 40px;
+                animation: scroll-left linear 80s infinite;
+            }.single img:nth-of-type(4), .double img:nth-of-type(4), .tripple img:nth-of-type(4) {
+                margin-top: 55px;
+                animation: scroll-right linear 80s infinite;
+            }.single img:nth-of-type(5), .double img:nth-of-type(5), .tripple img:nth-of-type(5) {
+                margin-top: 75px;
+                animation: scroll-left linear 80s infinite;
+            }.single img:nth-of-type(6), .double img:nth-of-type(6), .tripple img:nth-of-type(6) {
+                margin-top: 99px;
+                animation: scroll-right linear 80s infinite;
+            }.single img:nth-of-type(7), .double img:nth-of-type(7), .tripple img:nth-of-type(7) {
+                margin-top: 115px;
+                animation: scroll-left linear 80s infinite;
+            }.single img:nth-of-type(8), .double img:nth-of-type(8), .tripple img:nth-of-type(8) {
+                margin-top: 130px;
+                animation: scroll-right linear 80s infinite;
+            }.single img:nth-of-type(9), .double img:nth-of-type(9), .tripple img:nth-of-type(9) {
+                margin-top: 148px;
+                animation: scroll-left linear 80s infinite;
+            }.single img:nth-of-type(10), .double img:nth-of-type(10), .tripple img:nth-of-type(10) {
+                margin-top: 165px;
+                animation: scroll-right linear 80s infinite;
+            }.single img:nth-of-type(11), .double img:nth-of-type(11), .tripple img:nth-of-type(11) {
+                margin-top: 176px;
+                animation: scroll-left linear 80s infinite;
+            }.single img:nth-of-type(12), .double img:nth-of-type(12), .tripple img:nth-of-type(12) {
+                margin-top: 197px;
+                animation: scroll-right linear 80s infinite;
+            }.single img:nth-of-type(13), .double img:nth-of-type(13), .tripple img:nth-of-type(13) {
+                margin-top: 210px;
+                animation: scroll-left linear 80s infinite;
+            }
+            
+            .single img:nth-of-type(14), .double img:nth-of-type(14), .tripple img:nth-of-type(14) {
+                margin-top: 220px;
+                animation: scroll-right linear 80s infinite;
+            }.single img:nth-of-type(15), .double img:nth-of-type(15), .tripple img:nth-of-type(15) {
+                margin-top: 240px;
+                animation: scroll-left linear 80s infinite;
+            }.single img:nth-of-type(16), .double img:nth-of-type(16), .tripple img:nth-of-type(16) {
+                margin-top: 260px;
+                animation: scroll-right linear 80s infinite;
+            }.single img:nth-of-type(17), .double img:nth-of-type(17), .tripple img:nth-of-type(17) {
+                margin-top: 280px;
+                animation: scroll-left linear 80s infinite;
+            }.single img:nth-of-type(18), .double img:nth-of-type(18), .tripple img:nth-of-type(18) {
+                margin-top: 303px;
+                animation: scroll-right linear 80s infinite;
+            }.single img:nth-of-type(19), .double img:nth-of-type(19), .tripple img:nth-of-type(19) {
+                margin-top: 318px;
+                animation: scroll-left linear 80s infinite;
+            }.single img:nth-of-type(20), .double img:nth-of-type(20), .tripple img:nth-of-type(20) {
+                margin-top: 340px;
+                animation: scroll-right linear 80s infinite;
+            }.single img:nth-of-type(21), .double img:nth-of-type(21), .tripple img:nth-of-type(21) {
+                margin-top: 370px;
+                animation: scroll-left linear 80s infinite;
+            }.single img:nth-of-type(22), .double img:nth-of-type(22), .tripple img:nth-of-type(22) {
+                margin-top: 390px;
+                animation: scroll-right linear 80s infinite;
+            }.single img:nth-of-type(23), .double img:nth-of-type(23), .tripple img:nth-of-type(23) {
+                margin-top: 403px;
+                animation: scroll-left linear 80s infinite;
+            }.single img:nth-of-type(24), .double img:nth-of-type(24), .tripple img:nth-of-type(24) {
+                margin-top: 416px;
+                animation: scroll-right linear 80s infinite;
+            }
+
+            .single img:nth-of-type(25), .double img:nth-of-type(25), .tripple img:nth-of-type(25) {
+                margin-top: 445px;
+                animation: scroll-left linear 80s infinite;
+            }.single img:nth-of-type(26), .double img:nth-of-type(26), .tripple img:nth-of-type(26) {
+                margin-top: 460px;
+                animation: scroll-right linear 80s infinite;
+            }.single img:nth-of-type(27), .double img:nth-of-type(27), .tripple img:nth-of-type(27) {
+                margin-top: 475px;
+                animation: scroll-right linear 80s infinite;
+            }.single img:nth-of-type(28), .double img:nth-of-type(28), .tripple img:nth-of-type(28) {
+                margin-top: 493px;
+                animation: scroll-left linear 80s infinite;
+            }.single img:nth-of-type(29), .double img:nth-of-type(29), .tripple img:nth-of-type(29) {
+                margin-top: 516px;
+                animation: scroll-left linear 80s infinite;
+            }.single img:nth-of-type(30), .double img:nth-of-type(30), .tripple img:nth-of-type(30) {
+                margin-top: 535px;
+                animation: scroll-right linear 80s infinite;
+            }.single img:nth-of-type(31), .double img:nth-of-type(31), .tripple img:nth-of-type(31) {
+                margin-top: 560px;
+                animation: scroll-left linear 80s infinite;
+            }.single img:nth-of-type(32), .double img:nth-of-type(32), .tripple img:nth-of-type(32) {
+                margin-top: 585px;
+                animation: scroll-right linear 80s infinite;
+            }.single img:nth-of-type(33), .double img:nth-of-type(33), .tripple img:nth-of-type(33) {
+                margin-top: 602px;
+                animation: scroll-left linear 80s infinite;
+            }.single img:nth-of-type(34), .double img:nth-of-type(34), .tripple img:nth-of-type(34) {
+                margin-top: 618px;
+                animation: scroll-right linear 80s infinite;
+            }.single img:nth-of-type(35), .double img:nth-of-type(35), .tripple img:nth-of-type(35) {
+                margin-top: 645px;
+                animation: scroll-left linear 80s infinite;
+            }.single img:nth-of-type(36), .double img:nth-of-type(36), .tripple img:nth-of-type(36) {
+                margin-top: 660px;
+                animation: scroll-right linear 80s infinite;
+            }.single img:nth-of-type(37), .double img:nth-of-type(37), .tripple img:nth-of-type(37) {
+                margin-top: 680px;
+                animation: scroll-right linear 80s infinite;
+            }.single img:nth-of-type(38), .double img:nth-of-type(38), .tripple img:nth-of-type(38) {
+                margin-top: 698px;
+                animation: scroll-left linear 80s infinite;
+            }.single img:nth-of-type(39), .double img:nth-of-type(39), .tripple img:nth-of-type(39) {
+                margin-top: 712px;
+                animation: scroll-left linear 80s infinite;
+            }.single img:nth-of-type(40), .double img:nth-of-type(40), .tripple img:nth-of-type(40) {
+                margin-top: 330px;
+                animation: scroll-right linear 80s infinite;
+            }.single img:nth-of-type(41), .double img:nth-of-type(41), .tripple img:nth-of-type(41) {
+                margin-top: 5px;
+                animation: scroll-left linear 80s infinite;
+            }
+            
+            @keyframes scroll-left {
+                0% {
+                    -moz-transform: translateX(100%);
+                    -webkit-transform: translateX(100%);
+                    transform: translateX(100%);
+                }
+                100% {
+                    -moz-transform: translateX(-100%);
+                    -webkit-transform: translateX(-100%);
+                    transform: translateX(-100%);
+                }
+            }
+            
+            @keyframes scroll-right {
+                0% {
+                    -moz-transform: translateX(-100%);
+                    -webkit-transform: translateX(-100%);
+                    transform: translateX(-100%);
+                }
+                100% {
+                    -moz-transform: translateX(100%);
+                    -webkit-transform: translateX(100%);
+                    transform: translateX(100%);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="marquee">
+            <div class="single">
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-1.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-2.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-3.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-4.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-5.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-6.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-7.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-8.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-9.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-10.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-11.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-12.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-13.png"/>
+
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-2.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-3.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-4.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-5.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-7.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-8.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-1.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-6.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-9.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-12.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-13.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-10.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-11.png"/>
+
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-1.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-2.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-3.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-4.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-5.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-6.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-7.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-8.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-9.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-10.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-11.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-12.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-13.png"/>
+
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-5.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-7.png"/>
+            </div>
+
+
+            <div class="double">
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-1.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-2.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-3.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-4.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-5.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-6.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-7.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-8.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-9.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-10.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-11.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-12.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-13.png"/>
+
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-2.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-3.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-4.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-5.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-7.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-8.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-1.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-6.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-9.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-12.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-13.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-10.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-11.png"/>
+
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-1.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-2.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-3.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-4.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-5.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-6.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-7.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-8.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-9.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-10.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-11.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-12.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-13.png"/>
+
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-5.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-7.png"/>
+            </div>
+
+            <div class="tripple">
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-1.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-2.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-3.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-4.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-5.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-6.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-7.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-8.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-9.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-10.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-11.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-12.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-13.png"/>
+
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-2.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-3.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-4.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-5.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-7.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-8.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-1.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-6.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-9.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-12.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-13.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-10.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-11.png"/>
+
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-1.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-2.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-3.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-4.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-5.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-6.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-7.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-8.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-9.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-10.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-11.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-12.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-13.png"/>
+
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-5.png"/>
+                <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-7.png"/>
+            </div>
+        </div>
+        <script>
+            // const marquee = document.getElementsByClassName("marquee")
+            // const newmarquee = [...marquee]
+            window.onload = function () {
+            const marquee = document.querySelector(".marquee")
+            const newmarquee = marquee.cloneNode(true)
+            newmarquee.classList.add("cloned-marquee")
+            document.body.appendChild(newmarquee)
+        }
+        </script>
+    </body>
+</html>
