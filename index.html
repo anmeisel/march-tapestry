@@ -19,6 +19,40 @@
                 overflow: hidden;
             }
 
+            img.bottom-left {
+                position: absolute;
+                max-width: 50vw;
+                max-height: 50vh;
+                bottom: 2em;
+                left: 5em;
+                z-index: 999999 !important;
+            }
+
+            img.bottom-right {
+                position: absolute;
+                max-width: 30vw;
+                bottom: 2em;
+                right: 10em;
+                z-index: 999999 !important;
+            }
+
+            img.top-left {
+                position: absolute;
+                max-width: 50vw;
+                max-height: 50vh;
+                top: 2em;
+                left: 10em;
+                z-index: 999999 !important;
+            }
+
+            img.top-right {
+                position: absolute;
+                max-height: 60vh;
+                top: 2em;
+                right: 10em;
+                z-index: 999999 !important;
+            }
+
             .double img {
                margin-left: -100vw;
             }
@@ -338,6 +372,10 @@
                 <img src="https://external-pages.s3.amazonaws.com/art/long-yarn/c-7.png"/>
             </div>
         </div>
+        <img class="top-left"  src="https://external-pages.s3.amazonaws.com/art/long-yarn/ashton-blender.png"/>
+        <img class="bottom-left" src="https://external-pages.s3.amazonaws.com/art/long-yarn/lea-yarn.png"/>
+        <img class="top-right" src="https://external-pages.s3.amazonaws.com/art/long-yarn/momyarn.png"/>
+        <img class="bottom-right" src="https://external-pages.s3.amazonaws.com/art/long-yarn/the-end-svg.png"/>
         <script>
             // const marquee = document.getElementsByClassName("marquee")
             // const newmarquee = [...marquee]
